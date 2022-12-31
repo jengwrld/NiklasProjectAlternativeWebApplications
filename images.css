@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+  
+  }
+
+  .banner img{
+      width: 100px;
+      cursor: pointer;
+  }
+  
+  .navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+  }
+  
+  .logo{
+  width: 200px;
+  cursor: pointer;
+  }
+  
+  .navbar ul li {
+  
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+  
+  }
+  
+  .navbar ul li a{
+    text-decoration: none;
+    color: gold;
+    text-transform: uppercase;
+  }
+  
+  .navbar ul li::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  background: white;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+  
+  }
+  
+  .navbar ul li:hover::after {
+    width: 100%;
+  }
+  
+  .content{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: gold;
+  
+  }
+  
+  .content h1{
+    font-size: 60px;
+    margin-top: 80px;
+  }
+
+  .content h2{
+    
+    margin-top: 80px;
+  }
+
+
+.container{
+
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 8%;
+    background: black;
+
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+
+}
+
+.gallery img{
+    width: 100%;
+}
